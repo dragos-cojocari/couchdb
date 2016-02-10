@@ -16,10 +16,10 @@ import com.rpeactual.couchdb.CouchDBResponse;
 
 public class TestCouchDBClient
 {
-	private static final String CLOUDANT_URL = "https://1baa5784-76c8-45dd-88ac-cce220467cab-bluemix.cloudant.com:443";
-	private static final String CLOUDANT_DBNAME = "alpha";
-	private static final String CLOUDANT_PASSWORD = "bfecda6551b7d50a5917e7389e97a2df94085a60da050bc73571a1a2c1d619ed";
-	private static final String CLOUDANT_USERNAME = "1baa5784-76c8-45dd-88ac-cce220467cab-bluemix";
+	private static final String CLOUDANT_URL = System.getenv("CLOUDANT_URL");
+	private static final String CLOUDANT_DBNAME = System.getenv("CLOUDANT_DBNAME");
+	private static final String CLOUDANT_PASSWORD = System.getenv("CLOUDANT_PASSWORD");
+	private static final String CLOUDANT_USERNAME = System.getenv("CLOUDANT_USERNAME");
 
 	private static final String DOC_ID = "7e9ab3e882c7b6b1066760cc8d078760";
 	
